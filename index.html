@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Payment Page</title>
+    <script src="https://kit.fontawesome.com/e2143f767e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section class="body">
+
+        <!-- left half -->
+        <div class="left">
+            <!-- back and aisplstore c1 -->
+
+            <div class="left_col1">
+                <div class="left_col1_back">
+
+                    <i class="fas fa-arrow-left " style="font-size: 16px;">  <small class="left_col1_back_text">Back</small></i>
+
+
+                </div>
+                <div class="left_col1_aisplstore">
+                    <p>Aisplstore</p>
+                </div>
+            </div>
+
+
+
+            <!-- choose c2 -->
+            <div class="left_col2">
+                <h2 class="left_head">Choose a payment option</h2>
+
+            </div>
+
+
+
+            <!-- Total Payable Amount c3 -->
+            <div class="left_col3">
+                <p>Total Payable Amount ₹
+                    <span class="amount"> <strong>12369</strong> </span>
+                </p>
+                <div class="ARback">
+                    <div class="ARup"></div>
+                </div>
+            </div>
+
+            <div class="amount_hiden hide ">
+                <small>Sub total</small>
+                <small>₹<span class="amount"><small> 12369</small></span>
+                </small>
+            </div>
+
+            <!-- Transaction Id c4 -->
+            <div class="left_col4">
+                <p>Transaction Id:
+                    <span class="Transaction_Id">100004820</span>
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- right half -->
+        <div class="right">
+
+
+            <!-- PAYMENT OPTIONS -->
+            <div class="right_col1">
+                <p>PAYMENT OPTIONS</p>
+            </div>
+
+            <div class="hidden ">
+                <!--cards c1  -->
+                <div class="right_cards card1">
+                    <i class="fa fa-credit-card" aria-hidden="true">
+                    <span class="right_cards_text"> Cards (Credit/Debit)</span>
+                </i>
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c2  -->
+                <div class="right_cards card2">
+                    <img src="./images/emi.svg" style="height: 13px;" alt="">
+                    <span class="right_cards_text" style="padding-left: 10px;"> EMI</span>
+
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c3  -->
+                <div class="right_cards card3">
+                    <i class="fa fa-wallet" aria-hidden="true">
+                    <span class="right_cards_text"> Wallet</span>
+                </i>
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c4  -->
+                <div class="right_cards card4">
+                    <img src="./images/paytm.svg" style="height: 8.5px;" alt="">
+                    <span class="right_cards_text" style="padding-left: 10px;"> Paytm</span>
+
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c5  -->
+                <div class="right_cards card5">
+                    <i class="fa fa-university" aria-hidden="true">
+                    <span class="right_cards_text"> Net Banking</span>
+                </i>
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c6  -->
+                <div class="right_cards card6">
+                    <img src="./images/upi.svg" style="height: 17px;" alt="">
+                    <span class="right_cards_text"> Paytm</span>
+
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+                <!--cards c7  -->
+                <div class="right_cards card7">
+                    <img src="./images/google-pay.svg" style="height: 20px; transform: translate(0,5px);" alt="">
+                    <span class="right_cards_text"> Google Pay</span>
+
+                    <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                </div>
+
+
+            </div>
+
+            <!-- NEW CARD card1 on click -->
+            <div class="newCard hide">
+
+                <form action="">
+                    <label class="newCard_label" for="">Card Number</label><br>
+                    <input class="newCard_input" type="text" placeholder="Enter Card Number">
+                    <div class="holer_max_form">
+                        <div> <label class="newCard_label" for="">Expiry</label><br>
+                            <input class="newCard_input_half" type="text" placeholder="MM/YY">
+                        </div>
+                        <div> <label class="newCard_label" for="">CVV</label><br>
+                            <input class="newCard_input_half" type="text" placeholder="Enter CVV">
+                        </div>
+                    </div>
+                    <label class="newCard_label" for="">Name on Card</label><br>
+                    <input class="newCard_input" type="text" placeholder="Enter name as on card">
+
+                    <div class="holer_max_form_2">
+                        <div> <input class="checkbox" type="checkbox">
+                        </div>
+                        <div class="holer_max_form_2_2"> <small> Save this option securely for fast payment</small>
+                        </div>
+                    </div>
+
+                    <button class="newCard_button">PROCEED</button>
+
+
+                </form>
+            </div>
+
+
+            <!--EMI card2 on click -->
+            <div class="right_EMI_cards hide">
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/HDFC-securities.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> HDFC Bank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@15%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+
+
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/icic2.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> ICIC Bank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@12.99%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/Axis-Bank-PNG-Icon.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> Axis Bank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@13%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/RBL.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> RBL Bank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@13%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/citi.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> Citibank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@13%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+                <div class="right_EMI_cards_inner">
+                    <div> <img src="./images/kotak_mahindra_mutual_fund.png" style="height: 30px; transform: translate(0,-5px);" alt="">
+                    </div>
+                    <div class="right_EMI_cards_text_div">
+                        <span class="right_EMI_cards_text"> Kotak Mahindra Bank</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_cards_text_2">@13%</span>
+                    </div>
+                    <div>
+                        <span class="right_EMI_arrow">
+                            <i class="fas fa-angle-right" style="transform: translate(10px,2.6px);"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMI THIRD LAYER -->
+            <div>
+                <div class="EMI_INNER hide">
+                    <div class="notebox">
+                        <p>Note: </p>
+                        <p>A Convenience or Processing fee of ₹199 + GST will be charged for all cards EMI transaction by HDFC Bank</p>
+                    </div>
+                    <h4>EMI plans</h4>
+                    <form action="">
+                        <div class="radio_hold">
+
+                            <div><input type="radio" class="radio" value="1" name="fooby[1][]"></div>
+                            <div>
+                                <p class="EMI_INNER_lable1">Pay ₹1111.11 x 3 months </p>
+                                <p class="EMI_INNER_lable2"><small>Total interest charged = ₹111</small></p>
+                            </div>
+                        </div>
+                        <div class="radio_hold">
+                            <div><input type="radio" class="radio" value="1" name="fooby[1][]"></div>
+                            <div>
+                                <p class="EMI_INNER_lable1">Pay ₹1111.11 x 6 months </p>
+                                <p class="EMI_INNER_lable2"><small>Total interest charged = ₹111</small></p>
+                            </div>
+                        </div>
+                        <div class="radio_hold">
+                            <div><input type="radio" class="radio" value="1" name="fooby[1][]"></div>
+                            <div>
+                                <p class="EMI_INNER_lable1">Pay ₹1111.11 x 9 months </p>
+                                <p class="EMI_INNER_lable2"><small>Total interest charged = ₹111</small></p>
+                            </div>
+                        </div>
+                        <div class="radio_hold">
+                            <div><input type="radio" class="radio" value="1" name="fooby[1][]"></div>
+                            <div>
+                                <p class="EMI_INNER_lable1">Pay ₹1111.11 x 12 months </p>
+                                <p class="EMI_INNER_lable2"><small>Total interest charged = ₹111</small></p>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+
+
+
+
+                </div>
+
+                <!-- wallet card3 on click -->
+                <div class="wallet hide">
+                    <!--cards c1  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/phone-pay.png" style="height: 25px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> PhonePe/BHIM UPI</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c2  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/paytm.svg" style="height: 8.5px;" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Paytm</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c3  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/freecharge-logo.png" style="height: 22px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> FreeCharge</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/ola.png" style="height: 30px; transform: translate(0px,5px);" alt="">
+                        <span class="right_car
+                    ds_text" style="padding-left: 10px;"> OlaMoney(Postpaid+Wallet)</span> d
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/airtel.png" style="height: 20px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Airtel Money</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards wallet1">
+                        <img src="./images/pay_zap.png" style="height: 20px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> HDFC Bank - PayZapp</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                </div>
+
+
+                <!-- wallet card5 on click -->
+                <div class="banks hide">
+                    <!--cards c1  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/Axis-Bank-PNG-Icon.png" style="height: 30px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;">AXIS Bank</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c2  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/HDFC-securities.png" style="height: 30px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> HDFC Bank</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c3  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/icic2.png" style="height: 30px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> ICIC Bank</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/statebank.png" style="height: 30px; transform: translate(0px,5px);" alt="">
+                        <span class="right_car
+                    ds_text" style="padding-left: 10px;"> State Bank of India</span>
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/kotak_mahindra_mutual_fund.png" style="height: 38px; transform: translate(0,10px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Kotak Mahindra Bank</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c4  -->
+                    <div class="right_cards bank1">
+                        <img src="./images/airtel.png" style="height: 25px; transform: translate(2px,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Airtel Payments Bank</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+
+
+                </div>
+                <!-- UPI card6 on click -->
+                <div class="UPI hide">
+                    <!--cards c1  -->
+                    <div class="right_cards ">
+                        <img src="./images/google-pay.svg" style="height: 23px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text"> Google Pay</span>
+
+                        <span class="right_arrow">
+                <i class="fas fa-angle-right"></i></span>
+                    </div>
+
+
+                    <div class="right_cards ">
+                        <img src="./images/phone-pay.png" style="height: 27px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text"> Phone Pe</span>
+
+                        <span class="right_arrow">
+            <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <!--cards c3  -->
+                    <div class="right_cards ">
+                        <img src="./images/BHIM-COLOR.png" style="height: 25px; transform: translate(0,5px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> BHIM</span>
+
+                        <span class="right_arrow">
+            <i class="fas fa-angle-right"></i></span>
+                    </div>
+
+                    <div class="right_cards ">
+                        <img src="./images/paytm.svg" style="height: 10px;" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Paytm</span>
+
+                        <span class="right_arrow">
+            <i class="fas fa-angle-right"></i></span>
+                    </div>
+                    <div class="right_cards ">
+                        <img src="./images/amazon-pay.png" style="height: 30px; transform: translate(0,10px);" alt="">
+                        <span class="right_cards_text" style="padding-left: 10px;"> Amazon Pay</span>
+
+                        <span class="right_arrow">
+            <i class="fas fa-angle-right"></i></span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

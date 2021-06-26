@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left,
+.right {
+    height: 85vh;
+}
+
+.left {
+    width: 350px;
+    background-color: white;
+    border-radius: 8px 0 0 8px;
+    border-left: 6px solid rgb(71, 139, 219);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+}
+
+.right {
+    width: 450px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+    overflow-y: scroll;
+}
+
+
+/* back and aisplstore c1  */
+
+.left_col1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.left_col1_aisplstore {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+
+.left_col1_back {
+    transform: translate(-20px, 0);
+}
+
+.left_col1_back:hover {
+    cursor: pointer;
+}
+
+.left_col1_back_text {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-weight: 50px;
+}
+
+
+/* choose c2 */
+
+.left_col2 {
+    margin: 30px;
+}
+
+
+/* Total Payable Amount c3 */
+
+.left_col3 {
+    margin: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.amount {
+    font-size: 17px;
+    padding-right: 15px;
+}
+
+.amount_hiden {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+
+/* blue small button */
+
+.ARback {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(71, 139, 219);
+    border-radius: 50%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ARup {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3px 0px 3px;
+    border-color: white transparent transparent transparent;
+}
+
+.ARdown {
+    transform: rotate(180deg);
+}
+
+
+/* Transaction Id c4 */
+
+.left_col4 {
+    margin: 0 30px;
+    font-size: 11px;
+    color: gray;
+}
+
+
+/* right */
+
+
+/* PAYMENT OPTIONS c4 */
+
+.right_col1 {
+    margin: 30px;
+    font-size: 13px;
+    color: gray;
+}
+
+.right_cards {
+    margin: 0 30px;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.right_cards:hover {
+    cursor: pointer;
+}
+
+.right_cards_text {
+    padding-left: 15px;
+    font-weight: normal;
+    color: rgb(71, 69, 69);
+    letter-spacing: 1px;
+}
+
+.right_arrow {
+    float: right;
+}
+
+.right_cards_text_2 {
+    margin: 50px 35px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+
+/* new_card */
+
+.newCard {
+    margin: 30px;
+    display: block;
+}
+
+.newCard_label {
+    font-size: 12px;
+    text-align: left;
+}
+
+.newCard_input {
+    padding: 10px;
+    width: 350px;
+    margin: 12px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.newCard_input_half {
+    padding: 10px 10px;
+    width: 150px;
+    margin: 10px 0;
+}
+
+.holer_max_form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.holer_max_form_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    color: gray;
+    font-size: 16px;
+}
+
+.newCard_button {
+    width: 350px;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(71, 139, 219);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* EMI cards */
+
+.right_EMI_cards {
+    margin: 0 30px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.right_EMI_cards_inner {
+    display: flex;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.right_EMI_cards_text_div {
+    flex: 3;
+}
+
+.right_EMI_cards_text {
+    padding: 0 0px 0 15px;
+    font-weight: normal;
+    color: rgb(71, 69, 69);
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: .8px;
+}
+
+.right_EMI_cards_text_2 {
+    font-size: 12px;
+    padding: 0 30px 0 0;
+    color: gray;
+}
+
+.EMI_INNER {
+    margin: 50px;
+    font-size: 13px;
+    width: 200px;
+}
+
+.notebox {
+    display: flex;
+    width: 300px;
+    background-color: rgba(71, 140, 219, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.radio_hold {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.EMI_INNER_lable2 {
+    color: gray;
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+@media screen and (max-width: 700px) {
+    .body {
+        flex-direction: column;
+        margin: 10px;
+        overflow-x: hidden;
+    }
+    .left {
+        width: 80vw;
+        padding-bottom: 50px;
+        height: auto;
+    }
+    .right {
+        width: 80vw;
+        height: auto;
+    }
+    .newCard {
+        margin: 30px;
+        display: block;
+    }
+    .newCard_label {
+        font-size: 12px;
+        text-align: left;
+    }
+    .newCard_input {
+        padding: 10px;
+        width: 200px;
+        margin: 12px 0;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .newCard_input_half {
+        padding: 9px 9px;
+        width: 100px;
+    }
+    .holer_max_form {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 20vw;
+    }
+    .holer_max_form_2 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .holer_max_form_2_2 {
+        margin: 20px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .newCard_button {
+        width: 200px;
+    }
+    .EMI_INNER {
+        margin: 50px;
+        font-size: 13px;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .body {
+        flex-direction: column;
+        margin: 10px;
+        overflow-x: hidden;
+    }
+    .left {
+        width: 300px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+    .right {
+        width: 300px;
+        height: auto;
+    }
+}
+
+.hide {
+    display: none;
+}
